@@ -1,0 +1,3 @@
+As an elaborate form of procrastination, I decided to try and write a tool that would fudge the memory of a given process. 
+
+This doesn't quite work yet, for some reason...
