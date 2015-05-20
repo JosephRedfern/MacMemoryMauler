@@ -23,13 +23,6 @@ int main() {
 
     int retval = task_for_pid(mach_task_self(), pid, &task);
 
-    printf("Press any key to suspend\n");
-    scanf("%d", pid);
-    task_suspend(task);
-
-    printf("Done");
-    
-
     if(retval!=KERN_SUCCESS){
         fprintf(stderr, "[!] Failed to get task. Do you have perms?\n");
         fprintf(stderr, "Error: %s\n", mach_error_string(retval));
